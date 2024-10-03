@@ -1,0 +1,653 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = null;
+
+
+
+}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   @*  <link rel="preload" href="~/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin=""> *@
+    <link rel="stylesheet" href="~/css/leu7ttq.css">
+
+
+    <link href="~/css/css2.css" rel="stylesheet">
+    <link href="~/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="~/css/ig-theme.defaults.css" type="text/css" rel="stylesheet">
+    <link href="~/css/lib/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="~/css/photoswipe.css" type="text/css" rel="stylesheet">
+    <link href="~/css/ig-base.css" type="text/css" rel="stylesheet">
+    <link href="~/css/ig-header.css" type="text/css" rel="stylesheet">
+    <link href="~/css/ig-footer.css" type="text/css" rel="stylesheet">
+    <link href="~/css/ig-widgets.css" type="text/css" rel="stylesheet">
+    <link href="~/css/generated-themes/ig-theme-2I4Cf71GI0CqyF9cI3nA.css" type="text/css" rel="stylesheet">
+
+
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About Fort Privacy | Fort Privacy</title>
+    <meta name="description" content="Fort Privacy helps businesses with their ongoing privacy compliance journey by leveraging our multidisciplinary team of legal, technical and operational experts">
+
+    <meta property="og:title" content="About Fort Privacy | Fort Privacy">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Fort Privacy helps businesses with their ongoing privacy compliance journey by leveraging our multidisciplinary team of legal, technical and operational experts">
+    <meta property="og:url" content="https://www.fortprivacy.ie/about/">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <meta name="twitter:title" content="About Fort Privacy | Fort Privacy">
+    <meta name="twitter:description" content="Fort Privacy helps businesses with their ongoing privacy compliance journey by leveraging our multidisciplinary team of legal, technical and operational experts">
+
+
+
+
+
+
+
+
+    <script type="text/javascript" charset="UTF-8" async="" src="~/scripts/state.js"></script>
+    <script type="text/javascript" charset="UTF-8" async="" src="~/scripts/widgetIcon.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" async="" src="~/scripts/cdreport.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="~/scripts/configuration.js"></script>
+    <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="/scripts/lib/ie11CustomProperties.js"><\x2fscript>');</script>
+   
+
+
+
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <script id="Cookiebot" src="~/scripts/uc.js" data-cbid="609a10df-b78b-45f5-af14-ef0e5a699421" data-blockingmode="auto" type="text/javascript"></script>
+    <style type="text/css" id="CookieConsentStateDisplayStyles">        .cookieconsent-optin-preferences, .cookieconsent-optin-statistics, .cookieconsent-optin-marketing, .cookieconsent-optin {
+            display: none;
+        }
+
+        .cookieconsent-optout-preferences, .cookieconsent-optout-statistics, .cookieconsent-optout-marketing, .cookieconsent-optout {
+            display: block;
+            display: initial;
+        }</style>
+
+
+    <script defer="" data-domain="fortprivacy.ie" src="~/scripts/lib/plausible.js" type="text/javascript"></script>
+    <link href="~/scripts/lib/plausible.js" rel="preload" as="script">
+    <script type="text/javascript">
+        var dataLayer = dataLayer || [];
+    </script>
+   @*  <link href="~/scripts/lib//umbracoforms.js" rel="preload" as="script"> *@
+    <link href="~/scripts/lib/ls.respimg.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/ls.bgset.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/lazysizes.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/fluidvids.js" rel="preload" as="script">
+    <link href="~/scripts/lib/photoswipe.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/photoswipe-ui-default.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/instafeed.js" rel="preload" as="script">
+    <link href="~/scripts/lib/flickity.pkgd.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/polyfill.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/aspnet-validation.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/intersection-observer.js" rel="preload" as="script">
+    <link href="~/scripts/lib/axios.min.js" rel="preload" as="script">
+    <link href="~/scripts/ig-app.js" rel="preload" as="script">
+    <link href="~/scripts/lib/jquery-1.11.2.min.js" rel="preload" as="script">
+    <link href="~/scripts/custom.js" rel="preload" as="script">
+    <style>        .fluidvids {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .fluidvids-item {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }</style>
+</head>
+<body class="windows browser-chrome browser-version-129 no-touch scroll page-loaded" data-siteid="1293" data-culture="en-US">
+
+    <a href="~/about/#content" class="button skip-link">Jump to content</a>
+
+    <div class="io-hook"></div>
+
+    
+@{
+	var selection = Umbraco.ContentAtRoot().FirstOrDefault()
+    .Children()
+    .Where(x => x.IsVisible());
+}
+@* <ul>
+	@foreach (var item in selection)
+	{
+		<li>
+			<a href="@item.Url()">@item.Name()</a>
+		</li>
+	}
+</ul> *@
+
+  @*   <div class="container">
+        <nav class="navbar navbar-expand navbar-light">
+            <a class="navbar-brand font-weight-bold" href="index.html">UmbracoTV</a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                @foreach (var item in selection)
+                {
+                    <li class="nav-item">
+                        <a href="@item.Url()" class="nav-link">@item.Name()</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div> *@
+    <header class="top top--light top--full-width  top--navigation-right">
+        <div class="top-inner">
+
+            <div class="top__left">
+                <a href="~" class="logo logo--on-light" title="">
+                    <img src="~/media/4bdfrthu/logo5.png" alt="">
+                </a>
+                <a href="~/" class="logo logo--on-dark" title="">
+                    <img src="~/media/4bdfrthu/logo5.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="top__middle">
+                <nav class="main-nav main-nav--main">
+                    <ul class="main-nav__ul main-nav__ul--first">
+
+                        <li class="bbb main-nav__li ">
+                            <a class="main-nav__a" href="~/">Home</a>
+                        </li>
+                        @foreach (var item in selection)
+                        {
+                            
+                            <li class="bbb main-nav__li">
+                                <a href="@item.Url()" class="main-nav__a nav-link">@item.Name()</a>
+                            </li>
+                        }
+                        @* <li class="bbb main-nav__li  selected">
+                            <a class="main-nav__a" href="~/">Home</a>
+                        </li> *@
+                       
+
+
+                    </ul>
+
+                </nav>
+            </div>
+
+@*             <div class="top__right hide--m">
+                <nav class="main-nav main-nav--side">
+                    <ul class="main-nav__ul main-nav__ul--first">
+
+
+
+                        <li class="main-nav__li main-nav__li--btn ">
+
+                            <a href="https://www.fortprivacy.ie/contact/" title="Contact Us" class="button button--default button--theme button--solid">Contact Us</a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div> *@
+
+
+
+
+
+
+            <nav class="mobile-actions">
+                <ul>
+                    <li>
+                        <button class="hamburger" type="button" aria-label="Show navigation">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main id="content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer footer--dark light-color">
+
+        <div class="container container--big footer-grid">
+            <div class="row">
+
+                <div class="col-30 col-s-100">
+
+
+
+                    <div class="footer-item footer-item--text text-left">
+
+                        <div>
+                            <p>
+                                <img src="~/media/vuvnqdqh/logo_3.png?width=297&amp;height=61" alt="" width="297" height="61">
+
+                            </p>
+                            <p>
+                                <a rel="noopener" href="https://twitter.com/fortprivacy" target="_blank">
+                                    <img src="~/media/wmlhmg0z/twitter_icon.png?width=56&amp;height=56" alt="" width="56" height="56">
+                                </a> &nbsp;<a rel="noopener" href="https://www.linkedin.com/company/fort-privacy/" target="_blank">
+                                    <img src="~/media/1l1pn21r/linkedin_icon.png?width=56&amp;height=56" alt="" width="56" height="56">
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-30 col-s-100">
+
+
+
+                    <div class="footer-item footer-item--links">
+
+                        <h2 class="h6">Useful Links</h2>
+
+                        <nav class="navigation navigation--level-0" data-expand="true">
+                            <ul>
+                                <li class="">
+                                    <div>
+                                        <a href="~/">Home</a>
+                                    </div>
+                                    <ul>
+                                    </ul>
+                                </li>
+                                <li class="selected open">
+                                    <div>
+                                        <a href="~/about-us/">About</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="~/service/">Services</a>
+                                    </div>
+                                    <ul>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="~/the-framework/">The Framework</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="~/case-studies/">Case Studies</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="~/insights/">Insights</a>
+                                    </div>
+                                    <ul>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="~/contact/">Contact Us</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="~/data-protection-statement/">Data Protection Statement</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="https://www.fortprivacy.ie/trust-centre/">Trust Centre</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div>
+                                        <a href="https://www.fortprivacy.ie/cookie-notice/">Cookie Notice</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="col-40 col-s-100">
+
+
+
+                    <div class="footer-item footer-item--text text-left">
+
+                        <h2 class="h6">Address</h2>
+                        <div>
+                            <p>For the fastest response please email <a href="mailto:info@fortprivacy.ie">info@fortprivacy.ie</a></p>
+                            <!-- <p><img src="/media/5drf0tbb/technical-expert.png?width=126&amp;height=104" alt="" width="126" height="104" data-udi="umb://media/4c4de3fe832143feba84255c2c405a9e" /> <img src="/media/wl4l4jvx/legal-export.png?width=127&amp;height=104" alt="" width="127" height="104" data-udi="umb://media/26affdb442b74f11bfd08406ea1a5d87" /></p> -->
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <p class="footer__copyright">2024 Fort Privacy</p>
+        </div>
+
+
+    </footer>
+
+    <a href="~/about/#content" title="Scroll to top" class="to-top to-top--theme">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        <span class="sr-only">Scroll to top</span>
+    </a>
+
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (left arrow)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (right arrow)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+@* 
+    <script src="./About Fort Privacy _ Fort Privacy_files/ls.respimg.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/ls.bgset.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/lazysizes.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/fluidvids.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/photoswipe.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/photoswipe-ui-default.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/instafeed.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/flickity.pkgd.min.js.download" type="text/javascript"></script>
+    <iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="./About Fort Privacy _ Fort Privacy_files/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe>
+    <script src="./About Fort Privacy _ Fort Privacy_files/polyfill.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/aspnet-validation.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/intersection-observer.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/axios.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/ig-app.js.download" type="text/javascript"></script>
+
+
+
+    <script src="./About Fort Privacy _ Fort Privacy_files/jquery-1.11.2.min.js.download" type="text/javascript"></script>
+    <script src="./About Fort Privacy _ Fort Privacy_files/custom.js.download" type="text/javascript"></script> *@
+    <link href="~/scripts/lib/ls.respimg.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/ls.bgset.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/lazysizes.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/fluidvids.js" rel="preload" as="script">
+    <link href="~/scripts/lib/photoswipe.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/photoswipe-ui-default.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/instafeed.js" rel="preload" as="script">
+    <link href="~/scripts/lib/flickity.pkgd.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/polyfill.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/aspnet-validation.min.js" rel="preload" as="script">
+    <link href="~/scripts/lib/intersection-observer.js" rel="preload" as="script">
+    <link href="~/scripts/lib/axios.min.js" rel="preload" as="script">
+    <link href="~/scripts/ig-app.js" rel="preload" as="script">
+    <link href="~/scripts/lib/jquery-1.11.2.min.js" rel="preload" as="script">
+    <link href="~/scripts/custom.js" rel="preload" as="script">
+
+    <div>
+        <style type="text/css">            .CookieDeclarationDialogText, .CookieDeclarationIntro, .CookieDeclarationLastUpdated {
+                margin: 0 0 14px 0
+            }
+
+            .CookieDeclarationType {
+                display: block;
+                margin: 12px 0 12px 0;
+                padding: 8px 8px 0 8px;
+                border: 1px solid #333333;
+                vertical-align: top;
+            }
+
+            .CookieDeclarationTypeHeader {
+                font-weight: bold;
+            }
+
+            .CookieDeclarationTypeDescription {
+                margin: 2px 0 16px 0;
+            }
+
+            .CookieDeclarationTable {
+                table-layout: fixed;
+                width: 100%;
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0 0 18px 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+
+            .CookieDeclarationTableHeader {
+                font-weight: bold;
+                border-bottom: 1px solid #777777;
+                text-align: left;
+                padding: 4px;
+                overflow: hidden;
+            }
+
+                .CookieDeclarationTableHeader[dir='rtl'] {
+                    text-align: right;
+                }
+
+            .CookieDeclarationTableCell {
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                border-bottom: 1px solid #777777;
+                vertical-align: top;
+                padding: 4px 4px 5px 4px;
+            }
+
+            #CookieDeclarationUserStatusLabelConsentId {
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+            }
+
+            @@media all and (max-width: 600px) {
+                .CookieDeclaration table.CookieDeclarationTable tr td:nth-child(n+5), .CookieDeclaration table.CookieDeclarationTable tr th:nth-child(n+5), .CookieDeclaration table.CookieDeclarationTable colgroup col:nth-child(n+5) {
+                    display: none;
+                }
+            }
+        </style><div class="CookieDeclaration" lang="en" dir="ltr">  <p class="CookieDeclarationDialogText">This website uses cookies. </p><p style="">We use cookies to deliver our website features and collate website visitor statistics.<br style=""></p><p style="">We do not carry out any 3rd party tracking, advertising or marketing other than the use of analytics tools to review our website traffic. </p><p style="">You can read more in our <a href="https://www.fortprivacy.ie/cookie-notice/" style="">cookie notice</a></p><p></p>  <p class="CookieDeclarationIntro"></p><p style="">Cookies are small text files that are placed on your browser  by websites that you visit. They are widely used for a variety of purposes including to make websites work or to remember you from one visit to the next.   </p><p style="">&nbsp;</p><p style="">Our <a href="https://www.fortprivacy.ie/cookie-notice/" style="">Cookie Notice</a> explains more about how we use Cookies on our website.    &nbsp;   </p><p style="">&nbsp;</p><p style="">It is a declaration of the cookies that are active on our website, the purpose of the cookies and what they track.</p><p style="">&nbsp;</p><p style="">You can at any time change or withdraw your consent while navigating on our website<br style=""></p><br style=""><p style="">Learn more about who we are, how you can contact us and how we process personal data in our <a href="https://www.fortprivacy.ie/privacy/" target="_blank" style="">Data Protection Statement</a>.<br style=""></p><p></p>  <p>Your consent applies to the following domains: www.fortprivacy.ie</p>  <div id="CookieDeclarationUserStatusPanel" style="display: block; margin: 18px 0px 0px;" data-responsemode="leveloptin" data-dialogtemplate="overlay_customcolor"><div id="CookieDeclarationUserStatusLabel" style="display: block"><div id="CookieDeclarationUserStatusLabelOff" style="display: block;">Your current state: Deny.&nbsp;</div><div id="CookieDeclarationUserStatusLabelOffDoNotSell" style="display: none;">Your current state: Do not sell or share my personal information.&nbsp;</div><div id="CookieDeclarationUserStatusLabelMulti" style="display: none;">Your current state: Allow selection&nbsp;(Necessary<span id="CookieDeclarationUserStatusLabelMultiSettingsPref" style="display: none;">, Preferences</span><span id="CookieDeclarationUserStatusLabelMultiSettingsStat" style="display: none;">, Statistics</span><span id="CookieDeclarationUserStatusLabelMultiSettingsMark" style="display: none;">, Marketing</span>).&nbsp;</div><div id="CookieDeclarationUserStatusLabelOn" style="display: none;">Your current state: Allow all.&nbsp;</div><p style="display: block;" id="CookieDeclarationConsentIdAndDate"><span style="display:block">Your consent ID: <span id="CookieDeclarationUserStatusLabelConsentId">acOFUzHzcQqt4U8lCuYK0+tsWcjKEvHtCHh02+156ufl9ergW4D+lQ==</span></span><span style="display:block">Consent date: <span id="CookieDeclarationUserStatusLabelConsentDate">Monday, September 23, 2024 at 03:42:06 PM GMT+5:30</span></span></p></div><div id="CookieDeclarationChangeConsent" style="display: block"><a id="CookieDeclarationChangeConsentChange" href="https://www.fortprivacy.ie/about/#">Change your consent</a><span id="CookieDeclarationUserStatusLabelWithdraw" style="display: none;">&nbsp;&nbsp;|&nbsp;&nbsp;<a id="CookieDeclarationChangeConsentWithdraw" href="https://www.fortprivacy.ie/about/#">Withdraw your consent</a></span></div><div id="CookieDeclarationDoNotSell" style="display: none"><a id="CookieDeclarationChangeConsentDoNotSell" href="https://www.fortprivacy.ie/about/#">Do not sell or share my personal information</a></div></div><br><p class="CookieDeclarationLastUpdated">Cookie declaration last updated on 9/3/24 by <a href="https://www.cookiebot.com/" target="_blank" rel="noopener" title="Cookiebot">Cookiebot</a>:      </p>  <div class="CookieDeclarationType" lang="en" dir="ltr">    <p class="CookieDeclarationTypeHeader">Necessary (5)        </p>    <p class="CookieDeclarationTypeDescription"></p><p style="">Necessary cookies help make a website usable by enabling basic functions like page navigation. We also set a cookie to remember your cookie preferences between visits which we also categorise as a necessary cookie.<br style=""></p><p style="">&nbsp;</p><p style="">The website cannot function properly without these cookies.</p><p></p>    <table class="CookieDeclarationTable">      <colgroup>        <col style="width: 20%">        <col style="width: 20%">        <col style="width: 35%">        <col style="width: 15%">        <col style="width: 10%">      </colgroup>      <thead>        <tr>          <th scope="col" class="CookieDeclarationTableHeader" dir="ltr">Name</th>          <th scope="col" class="CookieDeclarationTableHeader" dir="ltr">Provider</th>          <th scope="col" class="CookieDeclarationTableHeader" dir="ltr">Purpose</th>          <th scope="col" class="CookieDeclarationTableHeader" dir="ltr">Maximum Storage Duration</th>          <th scope="col" class="CookieDeclarationTableHeader" dir="ltr">Type</th>        </tr>      </thead>      <tbody><tr>        <td class="CookieDeclarationTableCell">__cf_bm</td>        <td class="CookieDeclarationTableCell"><a target="_blank" rel="noopener noreferrer nofollow" href="https://vimeo.com/privacy" title="Vimeo&#39;s privacy policy">Vimeo</a></td>        <td class="CookieDeclarationTableCell">This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.</td>        <td class="CookieDeclarationTableCell">1 day</td>        <td class="CookieDeclarationTableCell">HTTP Cookie</td>      </tr>      <tr>        <td class="CookieDeclarationTableCell">__RequestVerificationToken</td>        <td class="CookieDeclarationTableCell">www.fortprivacy.ie</td>        <td class="CookieDeclarationTableCell">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td>        <td class="CookieDeclarationTableCell">Session</td>        <td class="CookieDeclarationTableCell">HTTP Cookie</td>      </tr>      <tr>        <td class="CookieDeclarationTableCell">_cfuvid</td>        <td class="CookieDeclarationTableCell"><a target="_blank" rel="noopener noreferrer nofollow" href="https://vimeo.com/privacy" title="Vimeo&#39;s privacy policy">Vimeo</a></td>        <td class="CookieDeclarationTableCell">This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. </td>        <td class="CookieDeclarationTableCell">Session</td>        <td class="CookieDeclarationTableCell">HTTP Cookie</td>      </tr>      <tr>        <td class="CookieDeclarationTableCell">ASP.NET_SessionId</td>        <td class="CookieDeclarationTableCell">www.fortprivacy.ie</td>        <td class="CookieDeclarationTableCell">Preserves the visitor's session state across page requests.</td>        <td class="CookieDeclarationTableCell">Session</td>        <td class="CookieDeclarationTableCell">HTTP Cookie</td>      </tr>      <tr>        <td class="CookieDeclarationTableCell">CookieConsent</td>        <td class="CookieDeclarationTableCell"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.cookiebot.com/goto/privacy-policy/" title="Cookiebot&#39;s privacy policy">Cookiebot</a></td>        <td class="CookieDeclarationTableCell">Stores the user's cookie consent state for the current domain</td>        <td class="CookieDeclarationTableCell">1 year</td>        <td class="CookieDeclarationTableCell">HTTP Cookie</td>      </tr>    </tbody></table>  </div></div>
+    </div>
+    <script id="CookieDeclaration" src="./About Fort Privacy _ Fort Privacy_files/cd.js.download" type="text/javascript" async=""></script>
+    <style>
+        .CookieDeclaration {
+            display: none;
+        }
+    </style>
+
+
+
+    <img id="CookiebotSessionPixel" src="./About Fort Privacy _ Fort Privacy_files/1.gif" alt="Cookiebot session tracker icon loaded" data-cookieconsent="ignore" style="display: none;">
+    <div><div dir="ltr" id="CookiebotWidget" lang="en"><button class="CookiebotWidget-logo" aria-label="Open widget" lang="en"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><circle cx="12" cy="12" r="12"></circle><path d="M15.094 13.978c-1.146 0-1.946-.813-1.946-1.978s.8-1.978 1.946-1.978c1.145 0 1.945.813 1.945 1.978s-.8 1.978-1.945 1.978M9.07 10.022h3.883l-.094.09c-.537.515-.844 1.203-.844 1.888 0 1.738 1.294 3 3.079 3 1.786 0 3.082-1.262 3.082-3s-1.296-3-3.082-3H9.079C7.295 9 6 10.262 6 12s1.295 3 3.079 3h2.144v-1.022H9.07c-1.136 0-1.932-.813-1.937-1.978 0-1.146.815-1.978 1.937-1.978" fill="#000"></path></g></svg></button><div id="CookiebotWidget-widgetContent"></div></div><div id="CookiebotWidgetUnderlay"></div></div>
+    <style id="CookiebotWidgetStylesheet">        @@keyframes CookiebotWidgetFadeIn {
+            0% {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        #CookiebotWidget {
+            word-wrap: break-word;
+            left: 15px;
+            bottom: 15px;
+            animation: CookiebotWidgetFadeIn .3s ease-in;
+            background-color: #FA9D35;
+            border-radius: 40px;
+            box-shadow: 0 4px 16px rgba(0,0,0,.15);
+            font-family: Helvetica,Arial,sans-serif;
+            line-height: 1.5;
+            min-height: 48px;
+            min-width: 48px;
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            transition: all .2s ease-in;
+            word-break: break-word;
+            z-index: 2147483631
+        }
+
+            #CookiebotWidget, #CookiebotWidget * {
+                background: transparent;
+                box-sizing: border-box;
+                color: #000000;
+                font-size: 15px;
+                letter-spacing: .1px;
+                margin: 0;
+                outline: 0;
+                padding: 0
+            }
+
+                #CookiebotWidget * {
+                    font-family: inherit
+                }
+
+                #CookiebotWidget button, #CookiebotWidget li, #CookiebotWidget strong, #CookiebotWidget svg, #CookiebotWidget ul {
+                    border: none;
+                    cursor: inherit;
+                    font-weight: inherit;
+                    line-height: 1.5
+                }
+
+                #CookiebotWidget:not(.CookiebotWidget-inactive) {
+                    opacity: 1;
+                    pointer-events: all;
+                    transition: opacity .3s ease-in,border-radius .2s ease-in
+                }
+
+                #CookiebotWidget.CookiebotWidget-open {
+                    overflow: hidden
+                }
+
+                #CookiebotWidget:not(.CookiebotWidget-open):hover {
+                    box-shadow: 0 4px 18px rgba(0,0,0,.3)
+                }
+
+                #CookiebotWidget + #CookiebotWidgetUnderlay {
+                    background: #000;
+                    height: 100vh;
+                    left: 0;
+                    opacity: 0;
+                    pointer-events: none;
+                    position: fixed;
+                    top: 0;
+                    visibility: hidden;
+                    width: 100vw;
+                    z-index: 2147483630
+                }
+
+                #CookiebotWidget:not(.CookiebotWidget-open) .CookiebotWidget-logo {
+                    cursor: pointer
+                }
+
+                #CookiebotWidget .CookiebotWidget-logo {
+                    display: block;
+                    transition: opacity .3s,transform .3s
+                }
+
+                    #CookiebotWidget .CookiebotWidget-logo svg {
+                        display: block;
+                        height: 44px;
+                        transition: all .3s;
+                        width: 44px
+                    }
+
+                #CookiebotWidget:not(.CookiebotWidget-open) button.CookiebotWidget-logo svg {
+                    height: 48px;
+                    transition: all 0s ease;
+                    transition-delay: .2s;
+                    width: 48px
+                }
+
+                #CookiebotWidget .CookiebotWidget-logo svg circle {
+                    fill: #FA9D35
+                }
+
+                #CookiebotWidget .CookiebotWidget-logo svg path {
+                    fill: #000000
+                }
+
+                #CookiebotWidget #CookiebotWidget-widgetContent {
+                    display: flex;
+                    max-height: 0;
+                    max-width: 0;
+                    overflow: hidden;
+                    transition: all .2s ease-in
+                }
+
+                #CookiebotWidget.CookiebotWidget-open #CookiebotWidget-widgetContent {
+                    max-height: 1000px;
+                    max-width: 1000px
+                }
+
+                #CookiebotWidget.CookiebotWidget-open .CookiebotWidget-contents {
+                    max-height: calc(100vh - 15px);
+                    min-height: 360px
+                }
+
+                #CookiebotWidget :focus-visible, #CookiebotWidget:not(.CookiebotWidget-open) .Cookiebotwidget-logo {
+                    outline: 2px solid #FA9D35;
+                    outline-offset: 1px
+                }
+
+        @@media screen and (max-width:600px) {
+            #CookiebotWidget:not(.CookiebotWidget-inactive) {
+                bottom: 10px;
+                left: 10px
+            }
+
+            #CookiebotWidget :focus-visible, #CookiebotWidget:not(.CookiebotWidget-open) .Cookiebotwidget-logo {
+                outline: 0
+            }
+        }
+
+        @@media screen and (min-width:601px) {
+            #CookiebotWidget + #CookiebotWidgetUnderlay {
+                display: none
+            }
+        }
+    </style>
+</body>
+
